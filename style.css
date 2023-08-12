@@ -1,0 +1,110 @@
+body {
+  font-family: initial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 80px;
+  border-radius: 10px;
+  background-color: rgba(20, 50, 50, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  margin: 60px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 800;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.form input {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 5px;
+}
+
+.form button {
+  padding: 20px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #b22222;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: #d9f4d5;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.completed-tasks,
+.pending-tasks {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.completed-tasks h2,
+.pending-tasks h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
